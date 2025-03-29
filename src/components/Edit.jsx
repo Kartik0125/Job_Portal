@@ -20,7 +20,7 @@ const Edit = () => {
 
   useEffect(() => {
     const fetchInitialPosts = async (id) => {  
-      const response = await axios.get(`http://localhost:8080/getJob/${id}`);
+      const response = await axios.get(`https://job-portal-backend-m9ry.onrender.com/getJob/${id}`);
       console.log(response.data);
       setForm(response.data);
     };
@@ -30,7 +30,7 @@ const Edit = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios      
-      .put("http://localhost:8080/updateJob",form)
+      .put("https://job-portal-backend-m9ry.onrender.com/updateJob",form)
       .then((resp) => {
         console.log(resp.data);
         navigate("/", { state: { refresh: true } });

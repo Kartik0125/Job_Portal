@@ -41,7 +41,7 @@ const Create = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8080/addJob",form)
+      .post("https://job-portal-backend-m9ry.onrender.com/addJob",form)
       .then((resp) => {
         console.log(resp.data);
         navigate('/',{ state: { refresh: true } });

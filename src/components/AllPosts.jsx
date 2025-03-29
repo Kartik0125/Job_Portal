@@ -26,7 +26,7 @@ const handleEdit = (id) => {
   navigate("/edit",{state:{id}});
 }
   const fetchInitialPosts = async () => {
-    const response = await axios.get(query ? `http://localhost:8080/jobPosts/keyword/${query}` : `http://localhost:8080/getAllJobs`);
+    const response = await axios.get(query ? `https://job-portal-backend-m9ry.onrender.com/jobPosts/keyword/${query}` : `https://job-portal-backend-m9ry.onrender.com/getAllJobs`);
     setPost(response.data);
   };
     useEffect(() => {
@@ -35,7 +35,7 @@ const handleEdit = (id) => {
 
       const handleDelete = (id) => {
         async function deletePost() {
-          await axios.delete(`http://localhost:8080/deleteJob/${id}`);
+          await axios.delete(`https://job-portal-backend-m9ry.onrender.com/deleteJob/${id}`);
       }
       deletePost();
         fetchInitialPosts();
