@@ -21,10 +21,10 @@ const Navbar = () => {
               </Typography>
 
               <Box sx={{ m: 0.5, mx: 'auto', width: 80 }}>
-                <Button variant="outlined" href='http://localhost:3000'>Home</Button>
+                <Button variant="outlined" href='https://job-portal-ten-nu.vercel.app/'>Home</Button>
                </Box>
               <Box sx={{ m: 0.5, mx: 'auto', width: 100 }}>
-                <Button variant="outlined" href='http://localhost:3000/create'>Add Job</Button>
+                <Button variant="outlined" href='https://job-portal-ten-nu.vercel.app/create'>Add Job</Button>
               </Box>
               <Box sx={{ m: 0.5, mx: 'auto', width: 180 }}>
                 <Button variant="outlined" href='https://www.geeksforgeeks.org/'>Contact Us</Button>
